@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Exotc350 Bd BT;
 }
 
 body {
@@ -17,6 +18,15 @@ body {
     width: 100%;
     margin: 12px auto;
     padding: 12px;
+
+}
+
+mark {
+    margin: 2px 4px;
+    padding: 6px 8px;
+    border-radius: 4px;
+    color: #020024;
+    font-weight: bold;
 
 }
 
@@ -71,4 +81,8 @@ button:hover {
     margin: 8px 0;
     padding: 8px;
     font-size: large;
+}
+
+.previousGuesses {
+    color: white;
 }
