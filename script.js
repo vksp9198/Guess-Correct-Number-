@@ -33,7 +33,7 @@ function validateGuess(guess) {
         // console.log(previousGuesses)
         if (numOFguess === 11) {
             displayGuess(guess)
-            displayMessage(`Game over. Random Number was ${randomNumbr}`)
+            displayMessage(`Game over. Random Number was ${randomNumber}`)
             endGame()
         } else {
             displayGuess(guess)
@@ -46,7 +46,7 @@ function validateGuess(guess) {
 
 function checkGuess(guess) {
     if (guess === randomNumber) {
-        displayMessage(`You guessed it correct.`)
+        displayMessage(`You guessed it correct. Random number was ${randomNumber}`)
         endGame()
     } else if (guess < randomNumber) {
         displayMessage(`Number is Tooo low`)
