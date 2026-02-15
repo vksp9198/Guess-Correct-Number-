@@ -31,9 +31,9 @@ function validateGuess(guess) {
     } else {
         prevGuess.push(guess)
         // console.log(previousGuesses)
-        if (numOFguess === 11) {
+        if (numOFguess === 10) {
             displayGuess(guess)
-            displayMessage(`Game over. Random Number was ${randomNumbr}`)
+            displayMessage(`Game over. Random Number was ${randomNumber}`)
             endGame()
         } else {
             displayGuess(guess)
