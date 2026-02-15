@@ -6,6 +6,7 @@ const userNum = document.getElementById('num')
 const btn = document.querySelector(".btn")
 const previousGuesses = document.querySelector('.previousGuesses')
 const remainingGuesses = document.querySelector('.remainingGuesses')
+const msg = document.querySelector(".msg")
 // console.log(num, btn, previousGuesses, remainingGuesses)
 let prevGuess = [];
 let numOFguess = 1;
@@ -49,8 +50,9 @@ function checkGuess(guess) {
         endGame()
     } else if (guess < randomNumber) {
         displayMessage(`Number is Tooo low`)
-    } else (guess > randomNumber)
-    displayMessage(`Number is Tooo high`)
+    } else if (guess > randomNumber) {
+        displayMessage(`Number is Tooo high`)
+    }
 }
 
 function displayGuess(guess) {
@@ -62,11 +64,15 @@ function displayGuess(guess) {
 }
 
 function displayMessage(message) {
-    //
+    msg.innerHTML = `${message}`
 }
 function endGame() {
-    //
+    userNum.value = ''
+    userNum.setAttribute('disabled', '')
+    playGame = false
+    newGame()
 }
-function startGame() {
-    //
+function newGame() {
+    playGame = true
+    prevGuess = []
 }

@@ -11,6 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .container {
@@ -22,8 +23,8 @@ body {
 }
 
 mark {
-    margin: 2px 4px;
-    padding: 6px 8px;
+    margin: 2px 2px;
+    padding: 2px 4px;
     border-radius: 4px;
     color: #020024;
     font-weight: bold;
@@ -76,6 +77,12 @@ button:hover {
     color: #fff;
 }
 
+.btns {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .result h4 {
     text-align: center;
     margin: 8px 0;
@@ -83,6 +90,17 @@ button:hover {
     font-size: large;
 }
 
-.previousGuesses {
-    color: white;
+.previousGuesses,
+.remainingGuesses {
+    color: black;
+    background-color: yellow;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.msg {
+    text-align: center;
+    font-weight: 300;
+    color: rgb(29, 246, 29);
 }
